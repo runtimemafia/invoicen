@@ -74,3 +74,7 @@ This type of invoice is used when the user wants to charge the client based on t
 1. [Tailwind CSS](https://tailwindcss.com/)
 1. [Shadcn](https://shadcn.com/)
 1. [PostgreSQL](https://www.mongodb.com/)
+
+## Docs
+
+For detailed documentation, please refer to the [wiki](https://github.com/keizerworks/invoicen/wiki).
