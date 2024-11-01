@@ -78,3 +78,7 @@ This type of invoice is used when the user wants to charge the client based on t
 ## Docs
 
 For detailed documentation, please refer to the [wiki](https://github.com/keizerworks/invoicen/wiki).
+
+## Contributing
+
+Take a look at the [contributing guidelines](CONTRIBUTING.md) for this project.
