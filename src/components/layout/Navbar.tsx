@@ -5,6 +5,7 @@ import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Skeleton } from "@/components/ui/logo-skeleton";
 
 const Navbar = () => {
 	const { theme } = useTheme();
@@ -15,11 +16,6 @@ const Navbar = () => {
 		setMounted(true);
 	}, []);
 
-	if (!mounted) {
-		// TODO: create a skeleton loader
-		return "loading...";
-	}
-
 	return (
 		<nav
 			aria-label="Navbar"
@@ -27,7 +23,7 @@ const Navbar = () => {
 		>
 			<div className="flex items-center justify-between max-w-[1260px] w-full border-[1px] border-solid rounded-xl px-4 py-2">
 				<div>
-					{theme === "light" ? (
+					{mounted?theme === "light" ? (
 						<Image
 							src={"/assets/logos/logo-icon-light.svg"}
 							height={60}
@@ -43,7 +39,7 @@ const Navbar = () => {
 							alt="logo"
 							aria-label="logo"
 						/>
-					)}
+					):<Skeleton/>}
 				</div>
 				<div className="flex items-center">
 					<ThemeToggleButton />
