@@ -5,7 +5,7 @@ import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Skeleton } from "@/components/ui/logo-skeleton";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Navbar = () => {
 	const { theme } = useTheme();
@@ -39,7 +39,7 @@ const Navbar = () => {
 							alt="logo"
 							aria-label="logo"
 						/>
-					):<Skeleton/>}
+					):<Skeleton className="h-[60px] w-[60px]"/>}
 				</div>
 				<div className="flex items-center">
 					<ThemeToggleButton />
