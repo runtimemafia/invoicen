@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ThemeToggleButton } from "../ThemeToggleButton";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 const Navbar = () => {
 	const { theme } = useTheme();
@@ -15,14 +16,14 @@ const Navbar = () => {
 	}, []);
 
 	if (!mounted) {
-		// You can return a placeholder here if you want
+		// TODO: create a skeleton loader
 		return "loading...";
 	}
 
 	return (
 		<nav
 			aria-label="Navbar"
-			className=" mt-5 flex items-center justify-center w-full"
+			className=" my-5 flex items-center justify-center w-full"
 		>
 			<div className="flex items-center justify-between max-w-[1260px] w-full border-[1px] border-solid rounded-xl px-4 py-2">
 				<div>
@@ -46,7 +47,9 @@ const Navbar = () => {
 				</div>
 				<div className="flex items-center">
 					<ThemeToggleButton />
-					<Button className="ml-4">Generate Invoice</Button>
+					<Link href={"/generate"}>
+						<Button className="ml-4">Generate Invoice</Button>
+					</Link>
 				</div>
 			</div>
 		</nav>
