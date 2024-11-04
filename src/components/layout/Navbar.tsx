@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ThemeToggleButton } from "../ThemeToggleButton";
+import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Navbar = () => {
