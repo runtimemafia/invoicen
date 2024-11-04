@@ -30,10 +30,18 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-				<head>
-					<link rel="icon" href="/assets/logos/logo-icon-light.svg" media="(prefers-color-scheme: light)" />
-					<link rel="icon" href="/assets/logos/logo-icon-dark.svg" media="(prefers-color-scheme: dark)" />
-				</head>
+			<head>
+				<link
+					rel="icon"
+					href="/assets/logos/logo-icon-light.svg"
+					media="(prefers-color-scheme: light)"
+				/>
+				<link
+					rel="icon"
+					href="/assets/logos/logo-icon-dark.svg"
+					media="(prefers-color-scheme: dark)"
+				/>
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black dark:text-white bg-white text-black flex items-center justify-center`}
 			>
