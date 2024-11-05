@@ -75,6 +75,25 @@ This type of invoice is used when the user wants to charge the client based on t
 1. [Shadcn](https://shadcn.com/)
 1. [PostgreSQL](https://www.postgresql.org/)
 
+## Development setup
+
+1. Clone the repo
+   ```shell
+   git clone https://github.com/keizerworks/invoicen.git
+   ```
+
+2. CD into the directory and install dependencies
+   ```shell
+   cd invoicen
+   pnpm install
+   ```
+   If pnpm is not intalled you can do `npm install -g pnpm`, add `sudo` if it throws an error
+
+3. Run the development server
+   ```shell
+   pnpm run dev
+   ```
+
 ## Docs
 
 For detailed documentation, please refer to the [wiki](https://github.com/keizerworks/invoicen/wiki).
